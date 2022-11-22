@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="../buildMultiTargeting/TamHac.AspNetCore.DurianApi.props" />
+</Project>
