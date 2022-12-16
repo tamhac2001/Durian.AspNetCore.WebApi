@@ -1,6 +1,5 @@
-using TamHac.AspNetCore.DurianApi.Application.Durian;
 using TamHac.AspNetCore.DurianApi.configuration;
-using TamHac.AspNetCore.DurianApi.Infrastructure.durian;
+using TamHac.AspNetCore.DurianApi.Durian.Service;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -14,7 +13,6 @@ builder.Services.AddProblemDetails();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-builder.Services.AddSingleton<IDurianRepository, DurianRepository>();
 builder.Services.AddSingleton<IDurianService, DurianService>();
 
 // settings
